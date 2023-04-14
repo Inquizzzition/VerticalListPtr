@@ -12,7 +12,7 @@ struct node {
     std::string val;                                  // значение
     node* next;                                       // указатель на следующий узел
     node(std::string &val);                            // конструктор
-
+    ~node();
 };
 
 

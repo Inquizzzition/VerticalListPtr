@@ -13,6 +13,7 @@ private:
     node* first;                            // указатель на первый элемент списка
     node* last;                             // указатель на последний элемент списка
 public:
+    ~vertical_list();
     vertical_list();                        // конструктор
     bool is_empty();                        // проверяет, есть ли в списке элементы
     void push_back(std::string &val);       // добавляет новый элемент в список

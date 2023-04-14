@@ -9,4 +9,8 @@ node::node(std::string &val):
     next(nullptr)
 {}
 
+node::~node() {
+    free(next);
+}
+
 

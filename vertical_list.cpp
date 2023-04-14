@@ -80,4 +80,10 @@ node* vertical_list::operator[](const size_t index) {
     return it;
 }
 
+vertical_list::~vertical_list() {
+    this->clear();
+    free(first);
+    free(last);
+}
+
 
